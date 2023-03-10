@@ -13,4 +13,6 @@ public class Room {
     private String roomType;
 
     private Float price;
+
+    
 }
