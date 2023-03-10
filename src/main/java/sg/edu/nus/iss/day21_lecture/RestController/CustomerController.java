@@ -24,7 +24,7 @@ public class CustomerController {
     }
 
     @GetMapping("/limit")
-    public List<Customer> getAllCustomers(@RequestParam("limit") int limit, int offset){
+    public List<Customer> getAllCustomers(@RequestParam("limit") int limit, @RequestParam("offset") int offset){
         return custSvc.retrieveAllCustomersWithLimitOffset(limit, offset);
     }
 
